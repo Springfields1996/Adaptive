@@ -2,6 +2,10 @@
   display: flex;
   margin: 0 -5px;
 
+  @media screen and (min-width: $phone) and (max-width: $bf-desktop) {
+    justify-content: center;
+  }
+
   &__link {
     display: flex;
     width: 44px;

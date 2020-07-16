@@ -1,9 +1,13 @@
 .layout {
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
 
   &__section {
     display: flex;
     margin-bottom: 94px;
+
+    @media screen and(min-width: $phone) and(max-width: $bf-desktop) {
+      margin-bottom: 60px;
+    }
   }
 }

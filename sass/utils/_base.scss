@@ -147,6 +147,20 @@ textarea {
   font-size: 14px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.66;
+  color: #212121;
+}
+
 a {
   display: inline-block;
   color: inherit;

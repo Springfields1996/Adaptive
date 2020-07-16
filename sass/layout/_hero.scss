@@ -6,21 +6,67 @@
 
   &__hero-bcg {
     display: block;
-    background-color: grey;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
       url(../image/bcg-hero.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 600px;
+    background-size: cover;
+    background-position: center;
+    max-width: 1600px;
+    height: auto;
     margin: 0 auto;
   }
 
+  @media screen and (min-width: $phone) and(max-width: 1199px) {
+    &__hero {
+      padding: 40px 30px;
+    }
+    &__hero-bcg {
+      width: auto;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media screen and (min-width: $smart) and(max-width: 1199px) {
+    &__hero {
+      width: 100%;
+      padding: 118px 60px;
+    }
+
+    &__hero-bcg {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../image/hero-480px.jpg);
+    }
+  }
+
+  @media screen and (min-width: $tablet) and(max-width: $bf-desktop) {
+    &__hero {
+      width: 768px;
+      height: 400px;
+      padding-left: 240px;
+      padding-right: 240px;
+    }
+    &__hero-bcg {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url(../image/header-780.jpg);
+    }
+  }
+
   &__section-main {
-    width: 1600px;
+    // width: 1600px;
     align-items: center;
+    @media screen and(min-width: $desktop) {
+      margin-top: 80px;
+    }
   }
 
   &__main-title {
@@ -34,5 +80,12 @@
     color: #ffffff;
 
     padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: $phone) and(max-width: 1199px) {
+    &__main-title {
+      font-size: 26px;
+      line-height: 1.62;
+    }
   }
 }

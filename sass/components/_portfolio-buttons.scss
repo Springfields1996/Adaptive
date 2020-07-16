@@ -2,6 +2,17 @@
   display: flex;
   padding-bottom: 56px;
   justify-content: center;
+
+  @media screen and(min-width: $phone) and(max-width: $bf-desktop) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+  }
+  @media screen and(min-width: $tablet) and(max-width: $bf-desktop) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
 }
 
 .buttons__filter {
@@ -34,5 +45,9 @@
 }
 
 .buttons__padding {
-  padding: 0 4px;
+  padding: 4px;
+
+  @media screen and(min-width: $phone) {
+    padding: 7px 4px;
+  }
 }

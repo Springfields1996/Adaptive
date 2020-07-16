@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -22,6 +22,49 @@
               <img src="./image/logo.svg" alt="WEB Studio" />
             </a>
           </li>
+          <li>
+              <button class="top-menu__button is open" data-menu-button>
+              <svg class="top-menu__icon">
+                <use class="menu-close" xlink:href="./image/sprite03.svg#icon-close"></use>
+                <use class="menu-open" xlink:href="./image/sprite03.svg#icon-menu"></use>
+              </svg>
+              </button>
+              <div class="popup-menu" data-menu>
+                <div class="popup-menu__nav">
+                  <ul class="menu-nav__list">
+                    <li class="menu-nav__item">
+                      <a class="menu-nav__link" href="/index.html">Студия</a>
+                    </li>
+                    <li class="menu-nav__item">
+                      <a class="menu-nav__link menu-nav__link-active" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="menu-nav__item">
+                      <a class="menu-nav__link" href="">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              <div class="popup-menu__contacts">
+                <ul class="menu-contacts__list">
+                  <li class="menu-contacts__item">
+                    <a class="menu-contacts__link" href="mailto:info@devstudio.com">
+                      <svg class="menu-contacts__icon icon--envelope">
+                        <use xlink:href="./image/sprite.svg#envelope"></use>
+                      </svg>
+                      <span class="menu-contacts__text">info@devstudio.com </span>
+                    </a>
+                  </li>
+                  <li class="menu-contacts__item">
+                    <a class="menu-contacts__link" href="tel:+380961111111">
+                      <svg class="menu-contacts__icon icon--smartphone">
+                        <use xlink:href="./image/sprite.svg#smartphone"></use>
+                      </svg>
+                      <span class="menu-contacts__text">+38 096 111 11 11</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </li>
           <li class="header__item header__item-nav">
             <nav class="nav">
               <ul class="nav__list">
@@ -94,23 +137,21 @@
         <!-- </div>/ -->
         <ul class="card__list">
           <li class="card__bigger">
-            <a href="">
-              <div class="card__popup-description">
-                <img src="./image/example-01.jpg" alt="" />
-                <p class="description__popup">
-                  Технокряк это современная площадка распространения
-                  коронавируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.
-                </p>
-              </div>
-              <div class="card__info">
-                <h2 class="section-title">Технокряк</h2>
-                <p class="card__naming">Веб-сайт</p>
-              </div>
-            </a>
+            <div class="card__popup-description">
+              <img src="./image/example-01.jpg" alt="" />
+              <p class="description__popup">
+                Технокряк это современная площадка распространения коронавируса.
+                Компании используют эту платформу для цифрового шпионажа и атак
+                на защищённые сервера конкурентов.
+              </p>
+            </div>
+            <div class="card__info">
+              <h2 class="section-title">Технокряк</h2>
+              <p class="card__naming">Веб-сайт</p>
+            </div>
           </li>
           <li class="card__bigger">
-            <a href="">
+            
               <div class="card__popup-description">
                 <p class="description__popup">
                   Технокряк это современная площадка распространения
@@ -128,7 +169,7 @@
             </a>
           </li>
           <li class="card__bigger">
-            <a href="">
+            
               <div class="card__popup-description">
                 <p class="description__popup">
                   Технокряк это современная площадка распространения
@@ -141,10 +182,10 @@
                 <h2 class="section-title">Ресторан Seafood</h2>
                 <p class="card__naming">Приложение</p>
               </div>
-            </a>
+                
           </li>
           <li class="card__bigger">
-            <a href="">
+            
               <div class="card__popup-description">
                 <p class="description__popup">
                   Технокряк это современная площадка распространения
@@ -157,10 +198,10 @@
                 <h2 class="section-title">Проект Prime</h2>
                 <p class="card__naming">Маркетинг</p>
               </div>
-            </a>
+                
           </li>
           <li class="card__bigger">
-            <a href="">
+            
               <div class="card__popup-description">
                 <p class="description__popup">
                   Технокряк это современная площадка распространения
@@ -173,10 +214,10 @@
                 <h2 class="section-title">Проект Boxes</h2>
                 <p class="card__naming">Приложение</p>
               </div>
-            </a>
+                
           </li>
           <li class="card__bigger">
-            <a href="">
+            
               <div class="card__popup-description">
                 <p class="description__popup">
                   Технокряк это современная площадка распространения
@@ -189,10 +230,10 @@
                 <h2 class="section-title">Inspiration has no Borders</h2>
                 <p class="card__naming">Веб-сайт</p>
               </div>
-            </a>
+                
           </li>
           <li class="card__bigger">
-            <a href="">
+            
               <div class="card__popup-description">
                 <p class="description__popup">
                   Технокряк это современная площадка распространения
@@ -205,10 +246,10 @@
                 <h2 class="section-title">Издание Limited Edition</h2>
                 <p class="card__naming">Дизайн</p>
               </div>
-            </a>
+                
           </li>
           <li class="card__bigger">
-            <a href="">
+            
               <div class="card__popup-description">
                 <p class="description__popup">
                   Технокряк это современная площадка распространения
@@ -221,10 +262,10 @@
                 <h2 class="section-title">Проект LAB</h2>
                 <p class="card__naming">Маркетинг</p>
               </div>
-            </a>
+                
           </li>
           <li class="card__bigger">
-            <a href="">
+            
               <div class="card__popup-description">
                 <img src="./image/example-09.jpg" alt="" />
                 <p class="description__popup">
@@ -238,7 +279,6 @@
                 <h2 class="section-title">Growing Business</h2>
                 <p class="card__naming">Приложение</p>
               </div>
-            </a>
           </li>
         </ul>
       </section>
@@ -247,74 +287,57 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__items">
-          <div class="container-footer">
-            <a href="/" class="logo"
-              ><img src="./image/logo-footer.svg" alt="WEB Studio"
-            /></a>
-            <address class="address footer-address">
-              г. Киев, пр-т Леси Украинки, 26
-            </address>
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <span class="contact__text">info@devstudio.com</span>
-            </a>
-            <a class="contact__link" href="tel:+380961111111">
-              <span class="contact__text">+38 096 111 11 11</span>
-            </a>
-          </div>
-
-          <div class="container-footer">
-            <div class="footer-social">
-              <p class="footer__text">Присоединяйтесь</p>
-              <ul class="footer-social__list">
-                <li clas="footer-social__list-item">
-                  <a
-                    class="footer-social__link footer-social__link--instagram"
-                    href=""
-                  >
-                  </a>
-                </li>
-                <li class="footer-social__list-item">
-                  <a
-                    class="footer-social__link footer-social__link--twitter"
-                    href=""
-                  >
-                  </a>
-                </li>
-                <li class="footer-social__list-item">
-                  <a
-                    class="footer-social__link footer-social__link--fb"
-                    href=""
-                  >
-                  </a>
-                </li>
-                <li class="footer-social__list-item">
-                  <a
-                    class="footer-social__link footer-social__link--linkedin"
-                    href=""
-                  >
-                  </a>
-                </li>
-              </ul>
+          <div class="footer__tablet">
+            <div class="container-footer">
+              <a href="/" class="logo"><img src="./image/logo-footer.svg" alt="WEB Studio" /></a>
+              <address class="address footer-address">
+                г. Киев, пр-т Леси Украинки, 26
+              </address>
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                <span class="contact__text">info@devstudio.com</span>
+              </a>
+              <a class="contact__link" href="tel:+380961111111">
+                <span class="contact__text">+38 096 111 11 11</span>
+              </a>
+            </div>
+    
+            <div class="container-footer">
+              <div class="footer-social">
+                <p class="footer__text">Присоединяйтесь</p>
+                <ul class="footer-social__list">
+                  <li clas="footer-social__list-item">
+                    <a class="footer-social__link footer-social__link--instagram" href="">
+                    </a>
+                  </li>
+                  <li class="footer-social__list-item">
+                    <a class="footer-social__link footer-social__link--twitter" href="">
+                    </a>
+                  </li>
+                  <li class="footer-social__list-item">
+                    <a class="footer-social__link footer-social__link--fb" href="">
+                    </a>
+                  </li>
+                  <li class="footer-social__list-item">
+                    <a class="footer-social__link footer-social__link--linkedin" href="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-
           <div class="container-footer footer__subscribe">
             <p class="footer__text">Подпишитесь на рассылку</p>
-            <div class="footer__subscribe--positioning">
-              <form action="">
-                <input
-                  class="footer-form__input"
-                  type="email"
-                  placeholder="E-mail"
-                />
-              </form>
-              <button class="btn btn-footer">
+            <form class="form-subscribe" action="">
+              <input class="footer-form__input" type="email" placeholder="E-mail">
+              <button class="btn btn-footer" type="submit">
                 Подписаться
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </footer>
+    
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -3,6 +3,11 @@
   overflow: hidden;
 }
 
+.card__popup-description > img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .description__popup {
   position: absolute;
   display: flex;
@@ -30,10 +35,18 @@
   box-sizing: border-box;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  max-width: 370px;
+  width: 370px;
   margin: 15px 15px;
   text-decoration: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and(min-width: $smart) and (max-width: $bf-desktop) {
+    width: 450px;
+  }
+
+  @media screen and(min-width: $tablet) and(max-width: $bf-desktop) {
+    width: 354px;
+  }
 
   a {
     text-decoration: none;

@@ -2,10 +2,6 @@
   display: flex;
 }
 
-.form-subscribe {
-  display: flex;
-}
-
 .footer-form__input {
   font-weight: 400;
   font-size: 16px;
@@ -21,6 +17,15 @@
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  @media screen and (min-width: $phone) and(max-width: $bf-desktop) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $smart) and(max-width: $bf-desktop) {
+    width: 450px;
+  }
 
   /* Скрывает placeholder при фокусе */
   &:focus::placeholder {

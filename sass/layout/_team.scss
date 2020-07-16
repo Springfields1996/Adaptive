@@ -1,6 +1,13 @@
 .layout__section-card {
   background-color: #f5f4fa;
+  width: auto;
   padding-top: 94px;
   padding-bottom: 94px;
   margin-bottom: 94px;
+
+  @media screen and (min-width: $phone) and (max-width: $bf-desktop) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
 }

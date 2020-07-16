@@ -1,5 +1,12 @@
 .layout {
-  width: 1600px;
+  width: 100%;
+
+  @media screen and (min-width: $smart) and (max-width: $bf-desktop) {
+    width: 480px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $bf-desktop) {
+    width: 768px;
+  }
 
   &__list {
     display: flex;

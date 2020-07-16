@@ -13,8 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
@@ -25,6 +25,49 @@
             <a href="/" class="logo">
               <img src="./image/logo.svg" alt="WEB Studio" />
             </a>
+          </li>
+          <li>
+            <button class="top-menu__button is open" data-menu-button>
+              <svg class="top-menu__icon">
+                <use class="menu-close" xlink:href="./image/sprite03.svg#icon-close"></use>
+                <use class="menu-open" xlink:href="./image/sprite03.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <div class="popup-menu" data-menu>
+              <div class="popup-menu__nav">
+                <ul class="menu-nav__list">
+                  <li class="menu-nav__item">
+                    <a class="menu-nav__link menu-nav__link-active" href="/index.html">Студия</a>
+                  </li>
+                  <li class="menu-nav__item">
+                    <a class="menu-nav__link" href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="menu-nav__item">
+                    <a class="menu-nav__link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="popup-menu__contacts">
+                <ul class="menu-contacts__list">
+                  <li class="menu-contacts__item">
+                    <a class="menu-contacts__link" href="mailto:info@devstudio.com">
+                      <svg class="menu-contacts__icon icon--envelope">
+                        <use xlink:href="./image/sprite.svg#envelope"></use>
+                      </svg>
+                      <span class="menu-contacts__text">info@devstudio.com </span>
+                    </a>
+                  </li>
+                  <li class="menu-contacts__item">
+                    <a class="menu-contacts__link" href="tel:+380961111111">
+                      <svg class="menu-contacts__icon icon--smartphone">
+                        <use xlink:href="./image/sprite.svg#smartphone"></use>
+                      </svg>
+                      <span class="menu-contacts__text">+38 096 111 11 11</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="header__item header__item-nav">
             <nav class="nav">
@@ -124,7 +167,7 @@
       </section>
 
       <section class="layout__section block">
-        <div class="container">
+        <div class="container block">
           <h2 class="block__title">Чем мы занимаемся</h2>
           <ul class="block__list">
             <li class="block__item">
@@ -157,7 +200,11 @@
           <ul class="card__list">
             <li class="card__item">
               <div class="img">
-                <img class="card__img" src="./image/john-smith.jpg" alt="" />
+                <img class="card__img" 
+                src="./image/john-smith.jpg" alt="" 
+                srcset="./image/person-1-450px.jpg 480w, 
+                ./image/person-1-780.jpg 780w," 
+                sizes="100vw, (min-width: 320px) 480px, (min-width: 780px) 780px"/>
               </div>
               <div class="card__item-info">
                 <h3 class="card__name">Николай Кучеренко</h3>
@@ -197,7 +244,10 @@
 
             <li class="card__item">
               <div class="img">
-                <img class="card__img" src="./image/marta-stewart.jpg" alt="" />
+                <img class="card__img" src="./image/marta-stewart.jpg" alt=""
+                srcset="./image/person-2-450px.jpg 480w, 
+                ./image/imgperson-2-780.jpg 780w," 
+                sizes="100vw, (min-width: 320px) 480px, (min-width: 780px) 780px" />
               </div>
               <div class="card__item-info">
                 <h3 class="card__name">Ольга Иванова</h3>
@@ -237,7 +287,10 @@
 
             <li class="card__item">
               <div class="img">
-                <img class="card__img" src="./image/robert-jakis.jpg" alt="" />
+                <img class="card__img" src="./image/robert-jakis.jpg" alt=""
+                srcset="./image/person-3-450px.jpg 480w, 
+                ./image/imgperson-3-780.jpg 780w,"
+                sizes="100vw, (min-width: 320px) 480px, (min-width: 780px) 780px" />
               </div>
               <div class="card__item-info">
                 <h3 class="card__name">Андрей Шевченко</h3>
@@ -277,7 +330,10 @@
 
             <li class="card__item">
               <div class="img">
-                <img class="card__img" src="./image/martin-doe.jpg" alt="" />
+                <img class="card__img" src="./image/martin-doe.jpg" alt=""
+                srcset="./image/person-4-450px.jpg 480w, 
+                ./image/imgperson-4-780.jpg 780w,"
+                sizes="100vw, (min-width: 320px) 480px, (min-width: 780px) 780px" />
               </div>
               <div class="card__item-info">
                 <h3 class="card__name">Иван Николаев</h3>
@@ -366,55 +422,54 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__items">
-          <div class="container-footer">
-            <a href="/" class="logo"
-              ><img src="./image/logo-footer.svg" alt="WEB Studio"
-            /></a>
-            <address class="address footer-address">
-              г. Киев, пр-т Леси Украинки, 26
-            </address>
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <span class="contact__text">info@devstudio.com</span>
-            </a>
-            <a class="contact__link" href="tel:+380961111111">
-              <span class="contact__text">+38 096 111 11 11</span>
-            </a>
-          </div>
+          <div class="footer__tablet">
+            <div class="container-footer">
+              <a href="/" class="logo"
+                ><img src="./image/logo-footer.svg" alt="WEB Studio"
+              /></a>
+              <address class="address footer-address">
+                г. Киев, пр-т Леси Украинки, 26
+              </address>
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                <span class="contact__text">info@devstudio.com</span>
+              </a>
+              <a class="contact__link" href="tel:+380961111111">
+                <span class="contact__text">+38 096 111 11 11</span>
+              </a>
+            </div>
 
-          <div class="container-footer">
-            <div class="footer-social">
-              <p class="footer__text">Присоединяйтесь</p>
-              <ul class="footer-social__list">
-                <li clas="footer-social__list-item">
-                   <a class="footer-social__link footer-social__link--instagram" href="">
-                  </a>
+            <div class="container-footer">
+              <div class="footer-social">
+                <p class="footer__text">Присоединяйтесь</p>
+                <ul class="footer-social__list">
+                  <li clas="footer-social__list-item">
+                    <a class="footer-social__link footer-social__link--instagram" href="">
+                    </a>
+                  </li>
+                  <li class="footer-social__list-item">
+                    <a class="footer-social__link footer-social__link--twitter" href=""> 
+                    </a>
                 </li>
                 <li class="footer-social__list-item">
-                  <a class="footer-social__link footer-social__link--twitter" href=""> 
-                  </a>
-               </li>
-               <li class="footer-social__list-item">
-                  <a class="footer-social__link footer-social__link--fb" href="">
-                  </a>
-                </li>
-                <li class="footer-social__list-item">
-                  <a class="footer-social__link footer-social__link--linkedin" href="">
-                  </a>
-                </li>
-             </ul>
+                    <a class="footer-social__link footer-social__link--fb" href="">
+                    </a>
+                  </li>
+                  <li class="footer-social__list-item">
+                    <a class="footer-social__link footer-social__link--linkedin" href="">
+                    </a>
+                  </li>
+              </ul>
+              </div>
             </div>
           </div>
-
           <div class="container-footer footer__subscribe">
             <p class="footer__text">Подпишитесь на рассылку</p>
-            <div class="footer__subscribe--positioning">
               <form class="form-subscribe" action="">
                 <input class="footer-form__input" type="email" placeholder="E-mail">
                 <button class="btn btn-footer" type="submit">
                   Подписаться
                 </button>
               </form>
-            </div>
           </div>
         </div>
       </div>
@@ -476,6 +531,7 @@
     </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
   </body>
 </html>
